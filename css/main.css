@@ -91,17 +91,20 @@ textarea {
 @font-face {
   font-family: Poppins;
   src: url('/fonts/Poppins-Regular.ttf');
+  font-display: swap
 }
 
 @font-face {
   font-family: Poppins-Thin;
   src: url('/fonts/Poppins-Light.ttf');
+  font-display: swap
 }
 
 @font-face {
   font-family: Poppins;
   font-weight: bold;
   src: url('/fonts/Poppins-Bold.ttf');
+  font-display: swap
 }
 
 a {
@@ -120,11 +123,11 @@ html {
 }
 
 p {
-  font-family: Poppins-Thin;
+  font-family: Poppins-Thin, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 li {
-  font-family: Poppins-Thin;
+  font-family: Poppins-Thin, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul {
@@ -132,7 +135,7 @@ ul {
 }
 
 body {
-  background-image: url('/img/bg_black2.png');
+  background-image: url('/img/bg_black.webp');
   background-size: 25%;
   background-repeat: repeat;
 }
@@ -159,6 +162,7 @@ body {
 
 .menu img {
   width: 100%;
+  height: 100%;
 }
 
 .pill-nav {
@@ -208,15 +212,17 @@ body {
   margin: 0;
 }
 
-.blogEntry .videoLink {
+.blogEntry .videoLink a {
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
 }
 
-.blogEntry .videoLink img {
+.blogEntry .videoLink a img {
   border-radius: 5px;
+  width: 100%;
+  height: 100%;
 }
 
 footer {

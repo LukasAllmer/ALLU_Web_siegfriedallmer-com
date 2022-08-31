@@ -1,0 +1,5 @@
+# www.robotstxt.org/
+
+User-agent: *
+Disallow: /pages/imprint.html
+Disallow: /pages/privacy.html

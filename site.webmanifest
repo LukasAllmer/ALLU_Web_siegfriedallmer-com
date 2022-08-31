@@ -8,5 +8,6 @@
   }],
   "start_url": "/?utm_source=homescreen",
   "background_color": "#000000",
-  "theme_color": "#242424"
+  "theme_color": "#242424",
+  "display": "browser"
 }
