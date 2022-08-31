@@ -87,21 +87,28 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
 @font-face {
-  font-family: Roboto;
-  src: url('/fonts/Roboto-Regular.ttf');
+  font-family: Poppins;
+  src: url('/fonts/Poppins-Regular.ttf');
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: Poppins-Thin;
+  src: url('/fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: Poppins;
   font-weight: bold;
-  src: url('/fonts/Roboto-Bold.ttf');
+  src: url('/fonts/Poppins-Bold.ttf');
 }
 
-:any-link {
+a {
+  text-decoration: none;
   color: #7F4CD4;
   font-weight: bold;
-  text-decoration: none;
+  font-size: 0.9em;
 }
 
 a:hover {
@@ -109,11 +116,24 @@ a:hover {
 }
 
 html {
-  font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-family: Poppins-Thin;
+}
+
+li {
+  font-family: Poppins-Thin;
+}
+
+ul {
+  padding: 0 1.2em;
 }
 
 body {
-  background-image: url('/img/bg_black.png');
+  background-image: url('/img/bg_black2.png');
+  background-size: 25%;
   background-repeat: repeat;
 }
 
@@ -127,9 +147,9 @@ body {
 
 .container {
   margin: 0 auto;
-  border-radius: 10px 10px 5px 5px;
-  background-color: rgba(255,255,255,0.95);
-  max-width: 900px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(255,255,255,1);
+  max-width: 1200px;
 }
 
 .menu {
@@ -171,12 +191,12 @@ body {
 
 /* Add a color to the active/current link */
 .pill-nav a.active {
-  background-color: rgba(221, 221, 221, 1);
+  background-color: rgba(255,255,255,1);
   color: #7F4CD4;
 }
 
 .content {
-  padding: 1em;
+  padding: 1em 2em 0;
 }
 
 .blogEntry {
@@ -184,11 +204,19 @@ body {
   flex-direction: column;
 }
 
+.blogEntry p {
+  margin: 0;
+}
+
 .blogEntry .videoLink {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
+}
+
+.blogEntry .videoLink img {
+  border-radius: 5px;
 }
 
 footer {
@@ -196,15 +224,51 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: right;
+  justify-content: space-between;
+  font-family: Poppins;
+  margin-top: 3em;
+  background-image: linear-gradient(to right, #7F4CD4,#7F4CD4,#ef70d2, #ef70d2);
+  border-radius: 0;
 }
 
-footer span {
-  margin: 0 6px;
+footer .link {
+  margin: 0;
 }
 
-footer #copyrightNotice {
-  width: 100%;
+footer>span, footer>a{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  flex-grow: 1;
+  padding: 0.5em 0;
+  min-width: 150px;
+  background-color: rgba(221, 221, 221, 0.5);
+}
+
+footer>a:hover{
+  background-color: rgba(221, 221, 221, 0.7);
+  color: white;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+footer a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer>a.active {
+  background-color: rgba(255,255,255,1);
+  color: #7F4CD4;
+}
+
+footer>a.active {
+  color: #7F4CD4;
 }
 
 /* ==========================================================================
@@ -300,10 +364,15 @@ footer #copyrightNotice {
   .blogEntry {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
   }
 
-  .blogEntry>div {
-    margin: 0 0.5em;
+  .videoLink {
+    max-width: 35%;
+  }
+
+  .blogEntry>.videoLink {
+    margin: 0 1.5em 0 0;
   }
   
   /* Style adjustments for viewports that meet the condition */
