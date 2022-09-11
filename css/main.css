@@ -91,20 +91,20 @@ textarea {
 @font-face {
   font-family: Poppins;
   src: url('/fonts/Poppins-Regular.ttf');
-  font-display: swap
+  font-display: swap;
 }
 
 @font-face {
   font-family: Poppins-Thin;
   src: url('/fonts/Poppins-Light.ttf');
-  font-display: swap
+  font-display: swap;
 }
 
 @font-face {
   font-family: Poppins;
   font-weight: bold;
   src: url('/fonts/Poppins-Bold.ttf');
-  font-display: swap
+  font-display: swap;
 }
 
 a {
