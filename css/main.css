@@ -142,7 +142,7 @@ body {
 
 .spacer {
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 0.4em 0;
   width: 100vw;
   height: 100vh; 
   min-width: 270px;
@@ -203,6 +203,42 @@ body {
   padding: 1em 2em 0;
 }
 
+.blogHeader {
+  display: flex;
+  flex-direction: column;
+  
+}
+.blogHeader>h2 {
+  margin-bottom: 0.2em;
+}
+
+.blogHeader .blogHeaderData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+.blogHeader .blogHeaderData .blogHeaderDataItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.blogHeader .blogHeaderData img {
+  height: 1.5em;
+  margin: 0 0.4em 0 0;
+}
+
+.blogHeader .blogHeaderData p {
+  margin: 0 0.8em 0 0;
+}
+
+
+
 .blogEntry {
   display: flex;
   flex-direction: column;
@@ -217,12 +253,14 @@ body {
   flex-direction: column;
   align-items: left;
   justify-content: center;
+  margin-bottom: 0.4em;
 }
 
 .blogEntry .videoLink a img {
   border-radius: 5px;
   width: 100%;
   height: 100%;
+  margin-bottom: 0.4em;
 }
 
 footer {
